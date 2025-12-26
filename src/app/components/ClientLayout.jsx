@@ -2,12 +2,14 @@
 
 import React from "react";
 import Header from "./Header";
+import Menu from "./Menu";
 
 export default function ClientLayout({ children }) {
   return (
-    <div>
+    <div className="min-h-screen w-full flex flex-col">
       <Header />
-      <main className="pt-15 pl-17">{children}</main>
+      <Menu />
+      <main className="pt-15 ps-17">{children}</main>
     </div>
   );
 }
